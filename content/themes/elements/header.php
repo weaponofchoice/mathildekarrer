@@ -26,10 +26,14 @@
 <body class="is-loading">
   <!-- Header -->
   <header>
-    <a class="link-logo" href="<?php echo home_url(); ?>">
-      <img src="<?php echo bloginfo( 'template_directory' ); ?>/img/logo.svg">
+    <a href="<?php echo home_url(); ?>">
+      <p>
+        <span class="is_bold is_uppercase">Mathilde Karrer</span>
+        <span class="is_italic">Photography</span>
+      </p>
     </a>
     
+    <a class="is_uppercase">About & Contact</a>
     <!-- <a class="trigger trigger-menu"><i></i></a> -->
   </header>
   

@@ -16,71 +16,32 @@
     4. Set classes based on the theory shown above.
 ###
 
-$ ->
-  ###
-    First, give heights to the hero
-  ###
-  hero = $('.section_hero')
-  hero_banner = $('.section_hero-banner')
-  
-  # Determine heights
-  hero_height = window.innerHeight - 50
-  
-  # Apply heights
-  hero.css "height", hero_height
-  hero_banner.css "height", hero_height
-  
-  ###
-    Next, shape the stretched object
-  ###
+if $('html').length > 0
   wrapper = $('.is-stretched-wrapper')
   object = $('.is-stretched-object')
-  ratio = object.width() / object.height()
   
   wrapper_w = wrapper.width()
   wrapper_h = wrapper.height()
   
   object.css "min-height", wrapper_h
   
-  if wrapper_w < wrapper_h * ratio
+  if wrapper_w < 2 * wrapper_h
     object.removeClass "is-stretched-wide"
     object.addClass "is-stretched-high"
   else
     object.removeClass "is-stretched-high"
     object.addClass "is-stretched-wide"
-  
-  ###
-    Scroll animation
-  ###
-  trigger = $('.arrow-scroll')
-  
-  trigger.css "top", hero_height - 30
-  
-  trigger.click ->
-    $('html, body').animate({scrollTop: hero_height + 20}, 500)
     
-  ###
-    Recalculate when window is resized
-  ###
   $(window).on 'resize', ->
-    # Re-determine heights
-    hero_height = window.innerHeight - 50
-    
-    # Re-apply heights
-    hero.css "height", hero_height
-    hero_banner.css "height", hero_height
-    trigger.css "top", hero_height - 30
-    
     wrapper = $('.is-stretched-wrapper')
     object = $('.is-stretched-object')
-    ratio = object.width() / object.height()
-    
+  
     wrapper_w = wrapper.width()
     wrapper_h = wrapper.height()
-    
+  
     object.css "min-height", wrapper_h
-    
-    if wrapper_w < wrapper_h * ratio
+  
+    if wrapper_w < 2 * wrapper_h
       object.removeClass "is-stretched-wide"
       object.addClass "is-stretched-high"
     else
