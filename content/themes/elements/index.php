@@ -1,12 +1,23 @@
 <?php
 get_header();
 
-if( have_posts() ):
-  while( have_posts() ): the_post();
-    
-    include_once( 'page.php' );
-    
-  endwhile;
+$cases = get_field( 'page_cases' );
+
+if( $cases ):
+  
+  echo '<section class="section section_grid section_gridSec">';
+    echo '<div class="section_content">';
+      echo '<ul class="s-grid-1 m-grid-2">';
+      
+      foreach( $cases as $post ):
+        
+        include( 'post-thumb.php' );
+        
+      endforeach;
+      
+      echo '</ul>';
+    echo '</div>';
+  echo '</section>';
   
   else:
   ?>
