@@ -8,9 +8,9 @@ require_once('includes/scripts.php');
 
 require_once('includes/admin/login.php');
 require_once('includes/admin/removal.php');
+require_once('includes/admin/renaming.php');
 require_once('includes/admin/menu.php');
 require_once('includes/admin/acf-page.php');
-require_once('includes/admin/tutorial.php');
 
 // Initialize mobile detect
 require_once('includes/Mobile_Detect.php');
