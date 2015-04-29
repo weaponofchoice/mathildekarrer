@@ -19,16 +19,16 @@ $include-html-block-grid-classes: $include-html-classes;
 $include-xl-html-block-grid-classes: true;
 
 // Basic settings
-$total-columns: 4;
-$column-gutter: rem-calc(30);
+$total-columns: 2;
+$column-gutter: rem-calc(60);
 
-$block-grid-elements: 4;
-$block-grid-default-spacing: rem-calc(30);
+$block-grid-elements: 2;
+$block-grid-default-spacing: rem-calc(60);
 $align-block-grid-to-grid: true;
 
 // (Extra) margin at either side of content
 $side-margin: rem-calc(60);
-$side-margin-small: rem-calc(30);
+$side-margin-small: rem-calc(60);
 
 // Space between content sections
 $section-spacing: rem-calc(60);

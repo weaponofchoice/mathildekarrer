@@ -12,12 +12,12 @@
     display: inline;
     height: auto;
     float: left;
-    padding: 0 0.9375rem; }
+    padding: 0 1.875rem; }
 
 @media only screen {
   .s-grid-1 > li {
     width: 100%;
-    padding: 0 0.9375rem; }
+    padding: 0 1.875rem; }
     .s-grid-1 > li:nth-of-type(n) {
       clear: none; }
     .s-grid-1 > li:nth-of-type(1n+1) {
@@ -25,31 +25,15 @@
 
   .s-grid-2 > li {
     width: 50%;
-    padding: 0 0.9375rem; }
+    padding: 0 1.875rem; }
     .s-grid-2 > li:nth-of-type(n) {
       clear: none; }
     .s-grid-2 > li:nth-of-type(2n+1) {
-      clear: both; }
-
-  .s-grid-3 > li {
-    width: 33.3333333333%;
-    padding: 0 0.9375rem; }
-    .s-grid-3 > li:nth-of-type(n) {
-      clear: none; }
-    .s-grid-3 > li:nth-of-type(3n+1) {
-      clear: both; }
-
-  .s-grid-4 > li {
-    width: 25%;
-    padding: 0 0.9375rem; }
-    .s-grid-4 > li:nth-of-type(n) {
-      clear: none; }
-    .s-grid-4 > li:nth-of-type(4n+1) {
       clear: both; } }
 @media only screen and (min-width: 31.313em) {
   .m-grid-1 > li {
     width: 100%;
-    padding: 0 0.9375rem; }
+    padding: 0 1.875rem; }
     .m-grid-1 > li:nth-of-type(n) {
       clear: none; }
     .m-grid-1 > li:nth-of-type(1n+1) {
@@ -57,31 +41,15 @@
 
   .m-grid-2 > li {
     width: 50%;
-    padding: 0 0.9375rem; }
+    padding: 0 1.875rem; }
     .m-grid-2 > li:nth-of-type(n) {
       clear: none; }
     .m-grid-2 > li:nth-of-type(2n+1) {
-      clear: both; }
-
-  .m-grid-3 > li {
-    width: 33.3333333333%;
-    padding: 0 0.9375rem; }
-    .m-grid-3 > li:nth-of-type(n) {
-      clear: none; }
-    .m-grid-3 > li:nth-of-type(3n+1) {
-      clear: both; }
-
-  .m-grid-4 > li {
-    width: 25%;
-    padding: 0 0.9375rem; }
-    .m-grid-4 > li:nth-of-type(n) {
-      clear: none; }
-    .m-grid-4 > li:nth-of-type(4n+1) {
       clear: both; } }
 @media only screen and (min-width: 62.563em) {
   .l-grid-1 > li {
     width: 100%;
-    padding: 0 0.9375rem; }
+    padding: 0 1.875rem; }
     .l-grid-1 > li:nth-of-type(n) {
       clear: none; }
     .l-grid-1 > li:nth-of-type(1n+1) {
@@ -89,31 +57,15 @@
 
   .l-grid-2 > li {
     width: 50%;
-    padding: 0 0.9375rem; }
+    padding: 0 1.875rem; }
     .l-grid-2 > li:nth-of-type(n) {
       clear: none; }
     .l-grid-2 > li:nth-of-type(2n+1) {
-      clear: both; }
-
-  .l-grid-3 > li {
-    width: 33.3333333333%;
-    padding: 0 0.9375rem; }
-    .l-grid-3 > li:nth-of-type(n) {
-      clear: none; }
-    .l-grid-3 > li:nth-of-type(3n+1) {
-      clear: both; }
-
-  .l-grid-4 > li {
-    width: 25%;
-    padding: 0 0.9375rem; }
-    .l-grid-4 > li:nth-of-type(n) {
-      clear: none; }
-    .l-grid-4 > li:nth-of-type(4n+1) {
       clear: both; } }
 @media only screen and (min-width: 87.5em) {
   .xl-grid-1 > li {
     width: 100%;
-    padding: 0 0.9375rem; }
+    padding: 0 1.875rem; }
     .xl-grid-1 > li:nth-of-type(n) {
       clear: none; }
     .xl-grid-1 > li:nth-of-type(1n+1) {
@@ -121,31 +73,15 @@
 
   .xl-grid-2 > li {
     width: 50%;
-    padding: 0 0.9375rem; }
+    padding: 0 1.875rem; }
     .xl-grid-2 > li:nth-of-type(n) {
       clear: none; }
     .xl-grid-2 > li:nth-of-type(2n+1) {
-      clear: both; }
-
-  .xl-grid-3 > li {
-    width: 33.3333333333%;
-    padding: 0 0.9375rem; }
-    .xl-grid-3 > li:nth-of-type(n) {
-      clear: none; }
-    .xl-grid-3 > li:nth-of-type(3n+1) {
-      clear: both; }
-
-  .xl-grid-4 > li {
-    width: 25%;
-    padding: 0 0.9375rem; }
-    .xl-grid-4 > li:nth-of-type(n) {
-      clear: none; }
-    .xl-grid-4 > li:nth-of-type(4n+1) {
       clear: both; } }
 @media only screen and (min-width: 120em) {
   .xxl-grid-1 > li {
     width: 100%;
-    padding: 0 0.9375rem; }
+    padding: 0 1.875rem; }
     .xxl-grid-1 > li:nth-of-type(n) {
       clear: none; }
     .xxl-grid-1 > li:nth-of-type(1n+1) {
@@ -153,26 +89,10 @@
 
   .xxl-grid-2 > li {
     width: 50%;
-    padding: 0 0.9375rem; }
+    padding: 0 1.875rem; }
     .xxl-grid-2 > li:nth-of-type(n) {
       clear: none; }
     .xxl-grid-2 > li:nth-of-type(2n+1) {
-      clear: both; }
-
-  .xxl-grid-3 > li {
-    width: 33.3333333333%;
-    padding: 0 0.9375rem; }
-    .xxl-grid-3 > li:nth-of-type(n) {
-      clear: none; }
-    .xxl-grid-3 > li:nth-of-type(3n+1) {
-      clear: both; }
-
-  .xxl-grid-4 > li {
-    width: 25%;
-    padding: 0 0.9375rem; }
-    .xxl-grid-4 > li:nth-of-type(n) {
-      clear: none; }
-    .xxl-grid-4 > li:nth-of-type(4n+1) {
       clear: both; } }
 .row {
   width: 100%;
@@ -198,8 +118,8 @@
     margin-right: 0; }
   .row .row {
     width: auto;
-    margin-left: -0.9375rem;
-    margin-right: -0.9375rem;
+    margin-left: -1.875rem;
+    margin-right: -1.875rem;
     margin-top: 0;
     margin-bottom: 0;
     max-width: none;
@@ -223,76 +143,40 @@
 .column,
 .columns {
   position: relative;
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
   width: 100%;
   float: left; }
 
 @media only screen {
   .s-push-1 {
     position: relative;
-    left: 25%;
+    left: 50%;
     right: auto; }
 
   .s-pull-1 {
     position: relative;
-    right: 25%;
-    left: auto; }
-
-  .s-push-2 {
-    position: relative;
-    left: 50%;
-    right: auto; }
-
-  .s-pull-2 {
-    position: relative;
     right: 50%;
-    left: auto; }
-
-  .s-push-3 {
-    position: relative;
-    left: 75%;
-    right: auto; }
-
-  .s-pull-3 {
-    position: relative;
-    right: 75%;
     left: auto; }
 
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
     float: left; }
 
   .s-1 {
     position: relative;
-    width: 25%; }
-
-  .s-2 {
-    position: relative;
     width: 50%; }
 
-  .s-3 {
-    position: relative;
-    width: 75%; }
-
-  .s-4 {
+  .s-2 {
     position: relative;
     width: 100%; }
 
   .s-offset-0 {
     position: relative;
     margin-left: 0%; }
-
-  .s-offset-1 {
-    position: relative;
-    margin-left: 25%; }
-
-  .s-offset-2 {
-    position: relative;
-    margin-left: 50%; }
 
   [class*="column"] + [class*="column"]:last-child {
     float: right; }
@@ -319,68 +203,32 @@
 @media only screen and (min-width: 31.313em) {
   .m-push-1 {
     position: relative;
-    left: 25%;
+    left: 50%;
     right: auto; }
 
   .m-pull-1 {
     position: relative;
-    right: 25%;
-    left: auto; }
-
-  .m-push-2 {
-    position: relative;
-    left: 50%;
-    right: auto; }
-
-  .m-pull-2 {
-    position: relative;
     right: 50%;
-    left: auto; }
-
-  .m-push-3 {
-    position: relative;
-    left: 75%;
-    right: auto; }
-
-  .m-pull-3 {
-    position: relative;
-    right: 75%;
     left: auto; }
 
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
     float: left; }
 
   .m-1 {
     position: relative;
-    width: 25%; }
-
-  .m-2 {
-    position: relative;
     width: 50%; }
 
-  .m-3 {
-    position: relative;
-    width: 75%; }
-
-  .m-4 {
+  .m-2 {
     position: relative;
     width: 100%; }
 
   .m-offset-0 {
     position: relative;
     margin-left: 0%; }
-
-  .m-offset-1 {
-    position: relative;
-    margin-left: 25%; }
-
-  .m-offset-2 {
-    position: relative;
-    margin-left: 50%; }
 
   [class*="column"] + [class*="column"]:last-child {
     float: right; }
@@ -407,98 +255,42 @@
 
   .push-1 {
     position: relative;
-    left: 25%;
+    left: 50%;
     right: auto; }
 
   .pull-1 {
     position: relative;
-    right: 25%;
-    left: auto; }
-
-  .push-2 {
-    position: relative;
-    left: 50%;
-    right: auto; }
-
-  .pull-2 {
-    position: relative;
     right: 50%;
-    left: auto; }
-
-  .push-3 {
-    position: relative;
-    left: 75%;
-    right: auto; }
-
-  .pull-3 {
-    position: relative;
-    right: 75%;
     left: auto; } }
 @media only screen and (min-width: 62.563em) {
   .l-push-1 {
     position: relative;
-    left: 25%;
+    left: 50%;
     right: auto; }
 
   .l-pull-1 {
     position: relative;
-    right: 25%;
-    left: auto; }
-
-  .l-push-2 {
-    position: relative;
-    left: 50%;
-    right: auto; }
-
-  .l-pull-2 {
-    position: relative;
     right: 50%;
-    left: auto; }
-
-  .l-push-3 {
-    position: relative;
-    left: 75%;
-    right: auto; }
-
-  .l-pull-3 {
-    position: relative;
-    right: 75%;
     left: auto; }
 
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
     float: left; }
 
   .l-1 {
     position: relative;
-    width: 25%; }
-
-  .l-2 {
-    position: relative;
     width: 50%; }
 
-  .l-3 {
-    position: relative;
-    width: 75%; }
-
-  .l-4 {
+  .l-2 {
     position: relative;
     width: 100%; }
 
   .l-offset-0 {
     position: relative;
     margin-left: 0%; }
-
-  .l-offset-1 {
-    position: relative;
-    margin-left: 25%; }
-
-  .l-offset-2 {
-    position: relative;
-    margin-left: 50%; }
 
   [class*="column"] + [class*="column"]:last-child {
     float: right; }
@@ -525,68 +317,32 @@
 @media only screen and (min-width: 87.5em) {
   .xl-push-1 {
     position: relative;
-    left: 25%;
+    left: 50%;
     right: auto; }
 
   .xl-pull-1 {
     position: relative;
-    right: 25%;
-    left: auto; }
-
-  .xl-push-2 {
-    position: relative;
-    left: 50%;
-    right: auto; }
-
-  .xl-pull-2 {
-    position: relative;
     right: 50%;
-    left: auto; }
-
-  .xl-push-3 {
-    position: relative;
-    left: 75%;
-    right: auto; }
-
-  .xl-pull-3 {
-    position: relative;
-    right: 75%;
     left: auto; }
 
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
     float: left; }
 
   .xl-1 {
     position: relative;
-    width: 25%; }
-
-  .xl-2 {
-    position: relative;
     width: 50%; }
 
-  .xl-3 {
-    position: relative;
-    width: 75%; }
-
-  .xl-4 {
+  .xl-2 {
     position: relative;
     width: 100%; }
 
   .xl-offset-0 {
     position: relative;
     margin-left: 0%; }
-
-  .xl-offset-1 {
-    position: relative;
-    margin-left: 25%; }
-
-  .xl-offset-2 {
-    position: relative;
-    margin-left: 50%; }
 
   [class*="column"] + [class*="column"]:last-child {
     float: right; }
@@ -613,68 +369,32 @@
 @media only screen and (min-width: 120em) {
   .xxl-push-1 {
     position: relative;
-    left: 25%;
+    left: 50%;
     right: auto; }
 
   .xxl-pull-1 {
     position: relative;
-    right: 25%;
-    left: auto; }
-
-  .xxl-push-2 {
-    position: relative;
-    left: 50%;
-    right: auto; }
-
-  .xxl-pull-2 {
-    position: relative;
     right: 50%;
-    left: auto; }
-
-  .xxl-push-3 {
-    position: relative;
-    left: 75%;
-    right: auto; }
-
-  .xxl-pull-3 {
-    position: relative;
-    right: 75%;
     left: auto; }
 
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
     float: left; }
 
   .xxl-1 {
     position: relative;
-    width: 25%; }
-
-  .xxl-2 {
-    position: relative;
     width: 50%; }
 
-  .xxl-3 {
-    position: relative;
-    width: 75%; }
-
-  .xxl-4 {
+  .xxl-2 {
     position: relative;
     width: 100%; }
 
   .xxl-offset-0 {
     position: relative;
     margin-left: 0%; }
-
-  .xxl-offset-1 {
-    position: relative;
-    margin-left: 25%; }
-
-  .xxl-offset-2 {
-    position: relative;
-    margin-left: 50%; }
 
   [class*="column"] + [class*="column"]:last-child {
     float: right; }
@@ -1353,18 +1073,18 @@ header {
 
 main,
 footer {
-  padding-left: 2.8125rem;
-  padding-right: 2.8125rem; }
+  padding-left: 1.875rem;
+  padding-right: 1.875rem; }
 
 @media only screen and (max-width: 31.25em) {
   header {
-    padding-left: 1.875rem;
-    padding-right: 1.875rem; }
+    padding-left: 3.75rem;
+    padding-right: 3.75rem; }
 
   main,
   footer {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem; } }
+    padding-left: 1.875rem;
+    padding-right: 1.875rem; } }
 main {
   height: auto !important;
   height: 100%;
@@ -1475,9 +1195,9 @@ nav ul {
 
 .slider-images {
   top: 0;
-  left: 0.9375rem;
+  left: 1.875rem;
   position: relative;
-  width: calc(100% - 1.875rem);
+  width: calc(100% - 3.75rem);
   overflow: hidden;
   list-style: none; }
   .slider-images li {
@@ -1681,10 +1401,6 @@ body.is-mobile .section-hero .section-hero-banner {
     .section_text .section_content a {
       margin-bottom: 1em; }
 
-.section_image .section_content figure {
-  display: inline-block;
-  text-align: left; }
-
 .section_grid ul {
   width: 100%; }
   .section_grid ul li {
@@ -1696,64 +1412,27 @@ body.is-mobile .section-hero .section-hero-banner {
       display: block; }
 
 @media only screen and (min-width: 62.563em) {
-  .l-grid-4 li:nth-last-child(-n + 4) {
-    margin-bottom: 0; }
-
-  .l-grid-3 li:nth-last-child(-n + 3) {
-    margin-bottom: 0; }
-
   .l-grid-2 li:nth-last-child(-n + 2) {
     margin-bottom: 0; }
 
   .l-grid-1 li:nth-last-child(-n + 1) {
     margin-bottom: 0; } }
 @media only screen and (min-width: 31.313em) and (max-width: 62.5em) {
-  .m-grid-4 li:nth-last-child(-n + 4) {
-    margin-bottom: 0; }
-
-  .m-grid-3 li:nth-last-child(-n + 3) {
-    margin-bottom: 0; }
-
   .m-grid-2 li:nth-last-child(-n + 2) {
     margin-bottom: 0; }
 
   .m-grid-1 li:nth-last-child(-n + 1) {
     margin-bottom: 0; } }
 @media only screen and (max-width: 31.25em) {
-  .s-grid-4 li:nth-last-child(-n + 4) {
-    margin-bottom: 0; }
-
-  .s-grid-3 li:nth-last-child(-n + 3) {
-    margin-bottom: 0; }
-
   .s-grid-2 li:nth-last-child(-n + 2) {
     margin-bottom: 0; }
 
   .s-grid-1 li:nth-last-child(-n + 1) {
     margin-bottom: 0; } }
 .section_grid ul.isotope_masonry li:nth-child(n) {
-  margin-bottom: 1.875rem; }
+  margin-bottom: 3.75rem; }
   .section_grid ul.isotope_masonry li:nth-child(n) img {
     margin-bottom: 0; }
-
-@media screen and (min-width: 1400px) {
-  .section_grid ul li {
-    width: 25%; } }
-.section_parallax .section_content,
-.bcg {
-  height: 0;
-  padding-bottom: 50% !important; }
-
-.section_parallax {
-  width: 100%;
-  z-index: 1000; }
-
-.bcg {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  width: 100%; }
 
 /*
  * Show and Hide class functions
@@ -2088,4 +1767,4 @@ body.is-mobile.is-loading > * {
 
 @media only screen and (max-width: 31.25em) {
   .is-fullwidth {
-    margin-left: -1.875rem; } }
+    margin-left: -3.75rem; } }
