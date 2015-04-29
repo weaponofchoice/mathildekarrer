@@ -58,7 +58,7 @@ $ ->
   
   trigger.click ->
     $('html, body').animate({scrollTop: hero_height + 20}, 500)
-    
+  
   ###
     Recalculate when window is resized
   ###
