@@ -1,13 +1,19 @@
 if $('.modal').length > 0
   modal = $('.modal')
   modal_header = $('.case_info-header')
+  modal_content = $('.case_info-content')
   trigger_open = $('.modal_open')
   trigger_close = $('.modal_close')
   
   Pace.on 'done', ->
     modal_h = modal.outerHeight()
     modal_header_h = modal_header.outerHeight()
+    modal_content_h = modal_content.outerHeight()
     
+    console.log modal_h
+    console.log modal_header_h
+    
+    modal_content.css "height", modal_content_h
     modal.css "bottom", -(modal_h - modal_header_h)
     
     trigger_open.click ->

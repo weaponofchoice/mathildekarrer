@@ -30,26 +30,25 @@ $case_desc = get_field( 'case_desc' );
   </div>
 </div>
 
-<div class="case_info modal">
+<div class="case_info modal s-4 columns">
   <div class="case_info-header modal_header">
-    <a class="modal_open"><span class="system is_uppercase">more info : </span><?php echo $case_title; ?></a>
+    <a class="modal_trigger modal_open"><span class="system is_uppercase">more info : </span><?php echo $case_title; ?></a>
+    <a class="modal_trigger modal_close"><span class="system">close window</span></a>
   </div>
   
   <div class="case_info-content modal_content">
-    <a class="modal_close"><span class="system">close window</span></a>
-    
     <ul>
       <li>
-        <p class="system is_uppercase">client : </p>
+        <p class="system is_uppercase">client</p>
         <p><?php echo $case_title; ?></p>
       </li>
       <li>
-        <p class="system is_uppercase">year : </p>
+        <p class="system is_uppercase">year</p>
         <p><?php echo $case_year; ?></p>
       </li>
       <li>
-        <p class="system is_uppercase">description : </p>
-        <p><?php echo $case_desc; ?></p>
+        <p class="system is_uppercase">description</p>
+        <div><?php echo $case_desc; ?></div>
       </li>
     </ul>
   </div>

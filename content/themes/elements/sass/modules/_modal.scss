@@ -11,5 +11,47 @@
   
   .modal_content{
     @include hide( .3s );
+    
+    top: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
   }
+}
+
+// Content: info
+.modal_content ul li{
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 1em;
+  
+  > p,
+  > div{
+    display: inline-block;
+    
+    &:first-child{
+      float: left;
+      
+      width: 20%;
+      
+      text-align: right;
+    }
+    
+    &:last-child{
+      float: right;
+      
+      width: calc(80% - 50px);
+    }
+  }
+}
+
+// Triggers
+.modal_trigger{
+  top: 0;
+  left: 0;
+  position: absolute;
 }
