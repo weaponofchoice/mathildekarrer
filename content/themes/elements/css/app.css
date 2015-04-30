@@ -1115,6 +1115,7 @@ header {
     display: inline-block; }
   header a:last-child {
     right: 60px;
+    bottom: 15px;
     position: absolute; }
 
 footer {
@@ -1272,7 +1273,7 @@ nav ul {
   transform: translate(-50%, -50%); }
   .slider-controls .arrow {
     height: 100%;
-    width: 2.75rem;
+    width: 18px;
     position: absolute;
     top: 0;
     display: block;
@@ -1299,13 +1300,13 @@ nav ul {
     .slider-controls .arrow.arrow-left {
       left: 0;
       margin-left: 2em;
-      -webkit-transform: rotate(-45deg); }
+      -webkit-transform: rotate(-90deg); }
       .slider-controls .arrow.arrow-left i {
         background-position: -64px -32px; }
     .slider-controls .arrow.arrow-right {
       right: 0;
       margin-right: 2em;
-      -webkit-transform: rotate(135deg); }
+      -webkit-transform: rotate(90deg); }
       .slider-controls .arrow.arrow-right i {
         background-position: -64px -64px; }
 

@@ -8,14 +8,13 @@
   
   .arrow{
     height: 100%;
-    width: rem-calc(44);
+    width: 18px;
     position: absolute;
     top: 0;
     display: block;
     cursor: pointer;
-//    z-index: $zIndex-rsArrow;
     
-    i{		
+    i{
       width: rem-calc(20);
       height: rem-calc(20);
       top: 50%;
@@ -44,7 +43,7 @@
     &.arrow-left{ 
       left: 0;
       margin-left: 2em;
-      -webkit-transform: rotate(-45deg);
+      -webkit-transform: rotate(-90deg);
       
       i{ 
         background-position: -64px -32px;
@@ -54,7 +53,7 @@
     &.arrow-right{ 
       right: 0;
       margin-right: 2em;
-      -webkit-transform: rotate(135deg);
+      -webkit-transform: rotate(90deg);
       
       i{
         background-position: -64px -64px;

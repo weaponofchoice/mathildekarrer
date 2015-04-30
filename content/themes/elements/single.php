@@ -17,8 +17,8 @@ $case_desc = get_field( 'case_desc' );
     
     <?php if(! $detect->isMobile() ): ?>
       <div class="slider-controls">
-        <a class="slider-prev arrow arrow-left" href="javascript:;"><i></i></a>
-        <a class="slider-next arrow arrow-right" href="javascript:;"><i></i></a>
+        <a class="slider-prev arrow arrow-left" href="javascript:;"><img src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg"></a>
+        <a class="slider-next arrow arrow-right" href="javascript:;"><img src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg"></a>
       </div>
     <?php endif; ?>
   </div>
