@@ -1,0 +1,15 @@
+.modal{
+  @include transition( .3s );
+  
+  position: absolute;
+  
+  background: $white;
+  
+  .modal_header{
+    padding: 15px 0;
+  }
+  
+  .modal_content{
+    @include hide( .3s );
+  }
+}

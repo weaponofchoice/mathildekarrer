@@ -1,0 +1,11 @@
+.modal.is_active{
+  bottom: 0 !important;
+  
+  .modal_header{
+    @include hide( .3s );
+  }
+  
+  .modal_content{
+    @include show( .3s );
+  }
+}

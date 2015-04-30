@@ -1434,6 +1434,25 @@ body.is-mobile .section-hero .section-hero-banner {
   .section_grid ul.isotope_masonry li:nth-child(n) img {
     margin-bottom: 0; }
 
+.modal {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  position: absolute;
+  background: white; }
+  .modal .modal_header {
+    padding: 15px 0; }
+  .modal .modal_content {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+
 /*
  * Show and Hide class functions
  */
@@ -1761,10 +1780,28 @@ body.is-mobile.is-loading > * {
   -o-transition: 0s;
   transition: 0s; }
 
-.is-fullwidth {
+.is_fullwidth {
   width: calc(100% + (3.75rem * 2));
   margin-left: -3.75rem; }
 
 @media only screen and (max-width: 31.25em) {
-  .is-fullwidth {
+  .is_fullwidth {
     margin-left: -3.75rem; } }
+.modal.is_active {
+  bottom: 0 !important; }
+  .modal.is_active .modal_header {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+  .modal.is_active .modal_content {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }

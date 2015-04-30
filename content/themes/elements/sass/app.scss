@@ -22,8 +22,8 @@
   "layout/_header",
   "layout/_footer",
   
-  "layout/navigation/_menu.scss",
-  "layout/navigation/_nav.scss";
+  "layout/navigation/_menu",
+  "layout/navigation/_nav";
   
 // MODULE
 @import
@@ -34,7 +34,9 @@
   "modules/content/_section",
   "modules/content/_hero",
   "modules/content/_text",
-  "modules/content/_grid";
+  "modules/content/_grid",
+  
+  "modules/_modal";
   
 // STATE
 @import
@@ -44,4 +46,5 @@
   "states/_typography",
   "states/_stretch",
   "states/_resizing",
-  "states/_fullwidth";
+  "states/_fullwidth",
+  "states/_modal";
