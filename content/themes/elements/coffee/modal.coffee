@@ -7,13 +7,12 @@ if $('.modal').length > 0
   
   Pace.on 'done', ->
     modal_h = modal.outerHeight()
-    modal_header_h = modal_header.outerHeight()
+    modal_header_h = modal_header.outerHeight() + 60
     modal_content_h = modal_content.outerHeight()
     
-    console.log modal_h
-    console.log modal_header_h
-    
+    modal_header.css "height", modal_header_h
     modal_content.css "height", modal_content_h
+    
     modal.css "bottom", -(modal_h - modal_header_h)
     
     trigger_open.click ->
