@@ -54,7 +54,7 @@ $ ->
   ###
   $(window).scroll ->
     window_scroll = $(window).scrollTop()
-    hero_banner.css "opacity", (500 - window_scroll) / 500
+    hero_banner.css "opacity", (1000 - window_scroll) / 1000
   
   ###
     Scroll animation
