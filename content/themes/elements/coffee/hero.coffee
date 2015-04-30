@@ -24,7 +24,7 @@ $ ->
   hero_banner = $('.section_hero-banner')
   
   # Determine heights
-  hero_height = window.innerHeight - 50
+  hero_height = window.innerHeight - $('header').height() - 30
   
   # Apply heights
   hero.css "height", hero_height

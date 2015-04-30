@@ -1103,13 +1103,14 @@ main {
   z-index: 900; }
 
 header {
-  top: 0;
+  bottom: 0;
   left: 0;
-  position: fixed;
+  position: absolute;
   z-index: 1100;
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
+  background: white;
   text-align: center; }
   header a:first-child h1, header a:first-child h2 {
     display: inline-block; }
@@ -1352,7 +1353,8 @@ main .section:last-child {
 
 .section_hero {
   height: 90vh;
-  overflow: hidden; }
+  overflow: hidden;
+  background: black; }
   .section_hero .section_hero-banner {
     position: fixed;
     overflow: hidden; }
@@ -1715,6 +1717,11 @@ body.is-mobile .section-hero .section-hero-banner {
 .is_positioned-center {
   display: block;
   margin: auto; }
+
+header.is_fixed {
+  top: 0;
+  bottom: auto;
+  position: fixed; }
 
 .section.has_no-pad,
 .section_header.has_no-pad,

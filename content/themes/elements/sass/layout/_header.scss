@@ -1,13 +1,14 @@
 header {
-  top: 0;
+  bottom: 0;
   left: 0;
-  position: fixed;
+  position: absolute;
   z-index: $zIndex-header;
   
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
   
+  background: $white;
   text-align: center;
   
   a:first-child h1{
