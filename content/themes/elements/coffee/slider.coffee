@@ -18,19 +18,6 @@ $ ->
   image.last().addClass "last-image last"
   bullet.last().addClass "last-bullet last"
   
-  Pace.on 'done', ->
-    $('.slider-images li img').each ->
-      x = $(this).closest('li').height()
-      width = $(this).width()
-      height = $(this).height()
-      ratio_view = $('.case_slider').height() / $('.case_slider').width()
-      ratio_img = $(this).height() / $(this).width()
-    
-      if $('.case_slider').width() / $('.case_slider').height() * ratio_img
-        $(this).addClass "high"
-      else
-        $(this).addClass "wide"
-  
   # lightbox functionality
   open = $('.lightbox-open')
   close = $('.lightbox-close')
