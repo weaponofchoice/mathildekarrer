@@ -1410,13 +1410,18 @@ body.is-mobile .section-hero .section-hero-banner {
 
 .section_grid ul {
   width: 100%; }
-  .section_grid ul li {
-    margin-bottom: 50px; }
-    .section_grid ul li > * {
-      margin-bottom: 15px; }
-    .section_grid ul li img {
-      min-width: 100%;
-      display: block; }
+
+.section_grid ul li {
+  float: none;
+  display: inline-block;
+  margin-bottom: 50px; }
+  .section_grid ul li a {
+    vertical-align: baseline; }
+    .section_grid ul li a img {
+      display: block;
+      min-width: 100%; }
+    .section_grid ul li a p {
+      padding: 1em 0; }
 
 @media only screen and (min-width: 62.563em) {
   .l-grid-2 li:nth-last-child(-n + 2) {

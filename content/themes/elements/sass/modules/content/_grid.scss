@@ -1,18 +1,27 @@
 .section_grid{
   ul{
     width: 100%;
+  }
+}
+
+// Grid item
+.section_grid ul li{
+  float: none;
+  display: inline-block;
+  
+  margin-bottom: 50px;
+  
+  a{
+    vertical-align: baseline;
     
-    li{
-      margin-bottom: 50px;
+    img{
+      display: block;
       
-      > *{
-        margin-bottom: 15px;
-      }
-      
-      img{
-        min-width: 100%;
-        display: block;
-      }
+      min-width: 100%;
+    }
+    
+    p{
+      padding: 1em 0;
     }
   }
 }

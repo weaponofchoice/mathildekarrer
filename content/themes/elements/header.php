@@ -39,7 +39,7 @@
       </p>
     </a>
     
-    <a class="is_uppercase">About & Contact</a>
+    <a class="system is_uppercase">About & Contact</a>
     <!-- <a class="trigger trigger-menu"><i></i></a> -->
   </header>
   
