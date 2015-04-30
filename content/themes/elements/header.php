@@ -29,7 +29,7 @@
   <?php wp_head(); ?>
 </head>
 
-<body class="is-loading">
+<body <?php body_class('is-loading'); ?>>
   <!-- Header -->
   <header>
     <a href="<?php echo home_url(); ?>">

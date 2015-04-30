@@ -1119,6 +1119,10 @@ header {
     bottom: 15px;
     position: absolute; }
 
+.single header {
+  top: 0;
+  position: fixed; }
+
 .overlay {
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
