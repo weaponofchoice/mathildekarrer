@@ -35,7 +35,7 @@ $case_desc = get_field( 'case_desc' );
     <ul>
       <li>
         <p class="system is_uppercase">client</p>
-        <p><?php echo $case_title; ?></p>
+        <p class="is_bold"><?php echo $case_title; ?></p>
       </li>
       <li>
         <p class="system is_uppercase">year</p>

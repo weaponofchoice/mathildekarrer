@@ -11,15 +11,16 @@
   &.system{
     @include apercu;
     
-    font-size: rem-calc(12);
-    letter-spacing: 1.5px;
+    font-size: rem-calc(10);
+    letter-spacing: rem-calc(1.5);
   }
 }
 
 h1{
   @extend %base;
   
-  font-size: rem-calc(18);
+  font-size: rem-calc(24);
+  letter-spacing: rem-calc(2.5);
 }
 
 h2{

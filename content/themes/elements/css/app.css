@@ -1039,26 +1039,28 @@ ul {
   margin-bottom: 6.25rem !important; }
 
 h1, h2, p, a, span {
-  font-family: 'Chronicle SSm A', 'Chronicle SSm B';
+  font-family: 'Chronicle Display A', 'Chronicle Display B';
   font-weight: 400;
   font-style: normal;
+  line-height: 1.4;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
   text-decoration: none;
   font-size: 16px;
   color: black; }
   h1.is_bold, h2.is_bold, p.is_bold, a.is_bold, span.is_bold {
-    font-weight: 600; }
+    font-weight: 700; }
   h1.system, h2.system, p.system, a.system, span.system {
     font-family: "Apercu Regular", Calibri, sans-serif;
     font-size-adjust: 0.508;
     font-weight: normal;
     font-style: normal;
-    font-size: 0.75rem;
-    letter-spacing: 1.5px; }
+    font-size: 0.625rem;
+    letter-spacing: 0.09375rem; }
 
 h1, h2 {
-  font-size: 1.125rem; }
+  font-size: 1.5rem;
+  letter-spacing: 0.15625rem; }
 
 p {
   font-size: 1.125rem; }
@@ -1101,32 +1103,19 @@ main {
   z-index: 900; }
 
 header {
-  display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;
-  /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flex;
-  /* TWEENER - IE 10 */
-  display: -webkit-flex;
-  /* NEW - Chrome */
-  display: flex;
-  /* NEW, Spec - Opera 12.1, Firefox 20+ */
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  -webkit-justify-content: space-between;
-  -moz-justify-content: space-between;
-  justify-content: space-between;
+  top: 0;
   left: 0;
   position: fixed;
   z-index: 1100;
   width: 100%;
   padding-top: 15px;
-  padding-bottom: 15px; }
-  header .link-logo {
-    width: 50px; }
+  padding-bottom: 15px;
+  text-align: center; }
+  header a:first-child h1, header a:first-child h2 {
+    display: inline-block; }
+  header a:last-child {
+    right: 60px;
+    position: absolute; }
 
 footer {
   z-index: 1100;
@@ -1473,7 +1462,7 @@ body.is-mobile .section-hero .section-hero-banner {
   .modal .modal_header {
     position: absolute;
     width: 100%;
-    margin: 30px 0; }
+    margin: 15px 0; }
   .modal .modal_content {
     opacity: 0;
     visibility: hidden;
@@ -1519,6 +1508,8 @@ body.is-mobile .section-hero .section-hero-banner {
     .modal_content ul li > div:last-child {
       width: calc(80% - 50px);
       margin-left: 50px; }
+  .modal_content ul li:last-child {
+    margin-bottom: 30px; }
 
 .modal_trigger {
   top: 0;

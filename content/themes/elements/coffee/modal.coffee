@@ -7,7 +7,7 @@ if $('.modal').length > 0
   
   Pace.on 'done', ->
     modal_h = modal.outerHeight()
-    modal_header_h = modal_header.outerHeight() + 60
+    modal_header_h = $('.modal_header .modal_trigger').outerHeight() + 30
     modal_content_h = modal_content.outerHeight()
     
     modal_header.css "height", modal_header_h

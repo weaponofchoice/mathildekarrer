@@ -33,10 +33,8 @@
   <!-- Header -->
   <header>
     <a href="<?php echo home_url(); ?>">
-      <p>
-        <span class="is_bold is_uppercase">Mathilde Karrer</span>
-        <span class="is_italic">Photography</span>
-      </p>
+      <h1 class="is_bold is_uppercase">Mathilde Karrer</h1>
+      <h1 class="is_italic">Photography</h1>
     </a>
     
     <a class="system is_uppercase">About & Contact</a>

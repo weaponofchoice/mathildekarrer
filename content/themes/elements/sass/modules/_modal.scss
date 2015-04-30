@@ -9,7 +9,7 @@
     position: absolute;
     
     width: 100%;
-    margin: 30px 0;
+    margin: 15px 0;
   }
   
   .modal_content{
@@ -49,6 +49,10 @@
       width: calc(80% - 50px);
       margin-left: 50px;
     }
+  }
+  
+  &:last-child{
+    margin-bottom: 30px;
   }
 }
 

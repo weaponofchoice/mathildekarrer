@@ -1,8 +1,5 @@
 header {
-  @include flex;
-  @include align-items( center );
-  @include justify-content( space-between );
-  
+  top: 0;
   left: 0;
   position: fixed;
   z-index: $zIndex-header;
@@ -11,7 +8,14 @@ header {
   padding-top: 15px;
   padding-bottom: 15px;
   
-  .link-logo {
-    width: 50px;
+  text-align: center;
+  
+  a:first-child h1{
+    display: inline-block;
+  }
+  
+  a:last-child{
+    right: 60px;
+    position: absolute;
   }
 }
