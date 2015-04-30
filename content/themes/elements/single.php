@@ -15,12 +15,6 @@ $case_desc = get_field( 'case_desc' );
       <?php endforeach; ?>
     </ul>
     
-    <ul class="slider-bullets">
-      <?php foreach( $case_images as $image ): ?>
-        <li><i></i></li>
-      <?php endforeach; ?>
-    </ul>
-    
     <?php if(! $detect->isMobile() ): ?>
       <div class="slider-controls">
         <a class="slider-prev arrow arrow-left" href="javascript:;"><i></i></a>
