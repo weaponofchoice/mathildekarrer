@@ -22,6 +22,9 @@
   <!-- Fonts from Typography.com -->
   <link rel="stylesheet" type="text/css" href="//cloud.typography.com/680076/710968/css/fonts.css" />
   
+  <!-- Fonts from Fontdeck -->
+  <link rel="stylesheet" href="//f.fontdeck.com/s/css/uH5+KWQnibDTJRYggGJ9XZLTAgw/DOMAIN_NAME/55988.css" type="text/css" />
+  
   <!-- WP_HEAD() -->
   <?php wp_head(); ?>
 </head>

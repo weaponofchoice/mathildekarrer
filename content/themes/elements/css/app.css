@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
 [class*="grid-"] {
   display: block;
   padding: 0;
@@ -1039,24 +1038,32 @@ ul {
 .margin-b100 {
   margin-bottom: 6.25rem !important; }
 
-h1, h2, p, a {
-  font-family: 'Open Sans', sans-serif;
+h1, h2, p, a, span {
+  font-family: 'Chronicle SSm A', 'Chronicle SSm B';
+  font-weight: 400;
   font-style: normal;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: none;
   font-size: 16px;
-  font-weight: normal;
-  text-rendering: geometricPrecision; }
-  h1.is_bold, h2.is_bold, p.is_bold, a.is_bold {
-    font-weight: 700; }
+  color: black; }
+  h1.is_bold, h2.is_bold, p.is_bold, a.is_bold, span.is_bold {
+    font-weight: 600; }
+  h1.system, h2.system, p.system, a.system, span.system {
+    font-family: "Apercu Regular", Calibri, sans-serif;
+    font-size-adjust: 0.508;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 0.75rem;
+    letter-spacing: 1.5px; }
 
 h1, h2 {
-  font-size: 3em; }
+  font-size: 1.125rem; }
 
-h2 {
-  font-size: 2em; }
+p {
+  font-size: 1.125rem; }
 
 a {
-  color: black;
-  text-decoration: underline;
   cursor: pointer; }
   a.link-h1, a.link-h2, a.link-h3, a.link-p {
     text-decoration: none; }
@@ -1698,27 +1705,27 @@ body.is-mobile .section-hero .section-hero-banner {
 .section_image .section_content.is_positioned-right {
   text-align: right; }
 
-h1.is_italic, h2.is_italic, p.is_italic, a.is_italic {
+h1.is_italic, h2.is_italic, p.is_italic, a.is_italic, span.is_italic {
   font-style: italic; }
-h1.is_underlined, h2.is_underlined, p.is_underlined, a.is_underlined {
+h1.is_underlined, h2.is_underlined, p.is_underlined, a.is_underlined, span.is_underlined {
   text-decoration: underline; }
-h1.is_capitalized, h2.is_capitalized, p.is_capitalized, a.is_capitalized {
+h1.is_capitalized, h2.is_capitalized, p.is_capitalized, a.is_capitalized, span.is_capitalized {
   text-transform: capitalize; }
-h1.is_uppercase, h2.is_uppercase, p.is_uppercase, a.is_uppercase {
+h1.is_uppercase, h2.is_uppercase, p.is_uppercase, a.is_uppercase, span.is_uppercase {
   text-transform: uppercase; }
-h1.is_lowercase, h2.is_lowercase, p.is_lowercase, a.is_lowercase {
+h1.is_lowercase, h2.is_lowercase, p.is_lowercase, a.is_lowercase, span.is_lowercase {
   text-transform: lowercase; }
-h1.is_bold, h2.is_bold, p.is_bold, a.is_bold {
+h1.is_bold, h2.is_bold, p.is_bold, a.is_bold, span.is_bold {
   font-weight: 700; }
-h1.is_aligned-center, h2.is_aligned-center, p.is_aligned-center, a.is_aligned-center {
+h1.is_aligned-center, h2.is_aligned-center, p.is_aligned-center, a.is_aligned-center, span.is_aligned-center {
   text-align: center; }
-h1.is_aligned-left, h2.is_aligned-left, p.is_aligned-left, a.is_aligned-left {
+h1.is_aligned-left, h2.is_aligned-left, p.is_aligned-left, a.is_aligned-left, span.is_aligned-left {
   text-align: left; }
-h1.is_aligned-right, h2.is_aligned-right, p.is_aligned-right, a.is_aligned-right {
+h1.is_aligned-right, h2.is_aligned-right, p.is_aligned-right, a.is_aligned-right, span.is_aligned-right {
   text-align: right; }
-h1.is_black, h2.is_black, p.is_black, a.is_black {
+h1.is_black, h2.is_black, p.is_black, a.is_black, span.is_black {
   color: black; }
-h1.is_white, h2.is_white, p.is_white, a.is_white {
+h1.is_white, h2.is_white, p.is_white, a.is_white, span.is_white {
   color: white; }
 
 p.is_small {
