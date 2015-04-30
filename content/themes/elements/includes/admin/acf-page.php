@@ -3,9 +3,9 @@
 if( function_exists('acf_add_options_page') ){
   
   acf_add_options_page( array(
-    'page_title'  => 'Footer',
-    'menu_title'  => 'Footer',
-    'menu_slug'   => 'footer',
+    'page_title'  => 'About',
+    'menu_title'  => 'About',
+    'menu_slug'   => 'about',
     'redirect'    => false
   ));
 }
