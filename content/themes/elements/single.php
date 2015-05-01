@@ -11,7 +11,15 @@ $case_desc = get_field( 'case_desc' );
   <div class="case_slider-content row">
     <ul class="slider-images s-4 columns">
       <?php foreach( $case_images as $image ): ?>
-        <li><div><img src="<?php echo $image['sizes']['large']; ?>" width="<?php echo $image['width']; ?>" height="<?php echo $image['height']; ?>"></div></li>
+        <li>
+          <div>
+            <?php if( $detect->isMobile() ): ?>
+              <img src="<?php echo $image['sizes']['m-large']; ?>" width="<?php echo $image['width']; ?>" height="<?php echo $image['height']; ?>">
+            <?php else: ?>
+              <img src="<?php echo $image['sizes']['large']; ?>" width="<?php echo $image['width']; ?>" height="<?php echo $image['height']; ?>">
+            <?php endif; ?>
+          </div>
+        </li>
       <?php endforeach; ?>
     </ul>
     
