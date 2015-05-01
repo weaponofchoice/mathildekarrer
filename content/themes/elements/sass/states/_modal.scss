@@ -1,0 +1,22 @@
+.modal{
+  .modal_open{
+    @include show( .3s );
+  }
+  
+  .modal_close{
+    @include hide( .3s );
+  }
+}
+
+.modal.is_active{
+  bottom: 0 !important;
+  
+  .modal_open{
+    @include hide( .3s );
+  }
+  
+  .modal_close,
+  .modal_content{
+    @include show( .3s );
+  }
+}

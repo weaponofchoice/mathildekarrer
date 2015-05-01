@@ -1,29 +1,41 @@
 %base{
-  @include opensans;
-  font-size: 16px;
-  font-weight: normal;
+  @include chronicle;
+  
   text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  
+  text-decoration: none;
+  font-size: 16px;
+  color: $black;
+  
+  &.system{
+    @include apercu;
+    
+    font-size: rem-calc(10);
+    letter-spacing: rem-calc(1.5);
+  }
 }
 
 h1{
   @extend %base;
-  font-size: 3em;
+  
+  font-size: rem-calc(24);
+  letter-spacing: rem-calc(2.5);
 }
 
 h2{
   @extend h1;
-  font-size: 2em;
 }
 
 p{
   @extend %base;
+  
+  font-size: rem-calc(18);
 }
 
 a{
   @extend %base;
   
-  color: black;
-  text-decoration: underline;
   cursor: pointer;
   
   &.link-h1,
@@ -32,4 +44,8 @@ a{
   &.link-p{
     text-decoration: none;
   }
+}
+
+span{
+  @extend %base;
 }

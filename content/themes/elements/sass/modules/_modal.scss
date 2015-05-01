@@ -1,0 +1,74 @@
+.modal{
+  @include transition( .3s );
+  
+  position: absolute;
+  
+  background: $white;
+  
+  .modal_header{
+    position: absolute;
+    
+    width: 100%;
+    margin: 15px 0;
+  }
+  
+  .modal_content{
+    @include hide( .3s );
+    
+    top: 0;
+    right: 0;
+    left: 0;
+    
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+  }
+}
+
+// Content: info
+.modal_content ul li{
+  @include flex;
+  @include flex-direction( row );
+  @include align-items( baseline );
+  
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 1em;
+  
+  > p,
+  > div{
+    display: inline-block;
+    
+    &:first-child{
+      width: 20%;
+      
+      text-align: right;
+    }
+    
+    &:last-child{
+      width: calc(80% - 50px);
+      margin-left: 50px;
+    }
+  }
+  
+  &:last-child{
+    margin-bottom: 30px;
+  }
+}
+
+// Triggers
+.modal_trigger{
+  top: 0;
+  left: 0;
+  position: absolute;
+  
+  width: 100%;
+  
+  img{
+    vertical-align: middle;
+    
+    max-width: 15px;
+    margin-right: 15px;
+    margin-bottom: 2px;
+  }
+}

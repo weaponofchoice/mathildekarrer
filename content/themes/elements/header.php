@@ -19,38 +19,33 @@
   <!-- LINK tags -->
   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/app.css">
   
+  <!-- Fonts from Typography.com -->
+  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/680076/710968/css/fonts.css" />
+  
+  <!-- Fonts from Fontdeck -->
+  <link rel="stylesheet" href="//f.fontdeck.com/s/css/uH5+KWQnibDTJRYggGJ9XZLTAgw/DOMAIN_NAME/55988.css" type="text/css" />
+  
   <!-- WP_HEAD() -->
   <?php wp_head(); ?>
 </head>
 
-<body class="is-loading">
+<body <?php body_class('is-loading'); ?>>
   <!-- Header -->
   <header>
-    <a class="link-logo" href="<?php echo home_url(); ?>">
-      <img src="<?php echo bloginfo( 'template_directory' ); ?>/img/logo.svg">
+    <a href="<?php echo home_url(); ?>">
+      <h1 class="is_bold is_uppercase">Mathilde Karrer</h1>
+      <h1 class="is_italic">Photography</h1>
     </a>
     
+    <a class="overlay_open system is_uppercase">About & Contact</a>
     <!-- <a class="trigger trigger-menu"><i></i></a> -->
   </header>
   
   <?php
-  // Hero section must be placed before main
-  if( have_posts() ):
-    while( have_posts() ): the_post();
-
-      // Loop into ACF groups
-      if( have_rows('page') ):
-        while( have_rows('page') ): the_row();
-
-          if( get_row_layout() == 'hero' ):
-            echo '<!-- Hero -->';
-            include_once( locate_template('content/hero.php') );
-          endif;
-
-        endwhile;
-      endif;
-
-    endwhile;
+  // Hero element
+  if( get_field( 'hero_banner' ) ):
+    echo '<!-- Hero -->';
+    include_once( locate_template('content/hero.php') );
   endif;
   ?>
   

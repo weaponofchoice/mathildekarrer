@@ -6,16 +6,11 @@
 <g>
 	<g>
 		<g>
-			
-				<rect x="4.7" y="0.8" transform="matrix(0.7071 0.7071 -0.7071 0.7071 4.7345 -2.3181)" fill="#010101" width="0.8" height="7.4"/>
+			<rect x="7" y="-1.4" transform="matrix(0.7071 0.7071 -0.7071 0.7071 7.5 -3.1066)" fill="#FFFFFF" width="1" height="17.7"/>
 		</g>
 		<g>
-			
-				<rect x="6.1" y="4.1" transform="matrix(0.7072 0.7071 -0.7071 0.7072 6.1013 -5.6193)" fill="#010101" width="7.4" height="0.8"/>
+			<rect x="-1.4" y="7" transform="matrix(0.7071 0.7071 -0.7071 0.7071 7.5 -3.1066)" fill="#FFFFFF" width="17.7" height="1"/>
 		</g>
-	</g>
-	<g>
-		<rect x="7.1" y="2.4" fill="#010101" width="0.8" height="11"/>
 	</g>
 </g>
 </svg>
