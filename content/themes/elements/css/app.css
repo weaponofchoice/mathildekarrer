@@ -1153,12 +1153,11 @@ header {
     right: 60px;
     bottom: 15px;
     position: absolute; }
-    .overlay_header a:last-child span,
     .overlay_header a:last-child img {
-      display: inline-block; }
-    .overlay_header a:last-child img {
-      max-width: 15px;
-      margin-left: 1em; }
+      width: 15px;
+      margin-left: 15px;
+      margin-bottom: 2px;
+      vertical-align: middle; }
 
 .overlay_content {
   -moz-transform: translateY(-50%);

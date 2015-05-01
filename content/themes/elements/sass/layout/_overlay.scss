@@ -36,14 +36,11 @@
     bottom: 15px;
     position: absolute;
     
-    span,
     img{
-      display: inline-block;
-    }
-    
-    img{
-      max-width: 15px;
-      margin-left: 1em;
+      width: 15px;
+      margin-left: 15px;
+      margin-bottom: 2px;
+      vertical-align: middle;
     }
   }
 }

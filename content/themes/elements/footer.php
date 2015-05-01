@@ -11,7 +11,8 @@
         <h1 class="is_italic">Photography</h1>
       </a>
     
-      <a class="overlay_close"><span class="system is_uppercase">close<img src="<?php echo get_template_directory_uri(); ?>/img/close-white.svg"></span></a>
+      <a class="overlay_close">
+        <span class="system is_uppercase">close<img src="<?php echo get_template_directory_uri(); ?>/img/close-white.svg"></span></a>
     </div>
     
     <div class="overlay_content">
