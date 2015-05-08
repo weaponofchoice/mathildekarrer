@@ -1095,12 +1095,15 @@ footer {
     padding-left: 1.875rem;
     padding-right: 1.875rem; } }
 main {
+  z-index: 900;
   height: auto !important;
   height: 100%;
   min-height: 100%;
   overflow: hidden;
-  background: white;
-  z-index: 900; }
+  background: white; }
+  main > * {
+    max-width: 1180px;
+    margin: auto; }
 
 header {
   bottom: 0;
