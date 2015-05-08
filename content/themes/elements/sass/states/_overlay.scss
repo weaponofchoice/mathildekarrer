@@ -48,6 +48,7 @@ $prefix-for-spec:      true;
 
 // Applying the animations
 .overlay p{  
+  @include transform( translateX(-25px) );
   @include transition( .5s );
   
   opacity: 0;
@@ -58,8 +59,8 @@ $prefix-for-spec:      true;
   
   p{
     opacity: 1;
-    @include transform(translateX(25px));
-    @include stagger-transition-delay(50, 0s, 0.1s);
+    @include transform( translateX(0) );
+    @include stagger-transition-delay( 50, 0s, 0.1s );
   }
 }
 

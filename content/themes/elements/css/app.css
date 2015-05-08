@@ -1123,6 +1123,17 @@ header {
   top: 0;
   position: fixed; }
 
+@media only screen and (max-width: 31.25em) {
+  header {
+    padding-left: 0;
+    padding-right: 0; }
+    header a:last-child {
+      right: 0;
+      bottom: 0;
+      position: relative;
+      width: 100%;
+      float: left;
+      margin-top: 25px; } }
 .overlay {
   opacity: 0;
   visibility: hidden;
@@ -1168,6 +1179,17 @@ header {
   .overlay_content p {
     margin-bottom: 1em; }
 
+@media only screen and (max-width: 31.25em) {
+  .overlay .overlay_header {
+    height: auto;
+    overflow: hidden; }
+    .overlay .overlay_header .overlay_close {
+      right: 0;
+      bottom: 0;
+      position: relative;
+      width: 100%;
+      float: left;
+      margin-top: 25px; } }
 a.trigger-menu {
   width: 35px;
   height: 35px;
@@ -1936,6 +1958,11 @@ body.is-mobile.is-loading > * {
     transition: 0.3s; }
 
 .overlay p {
+  -moz-transform: translateX(-25px);
+  -o-transform: translateX(-25px);
+  -ms-transform: translateX(-25px);
+  -webkit-transform: translateX(-25px);
+  transform: translateX(-25px);
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
@@ -1953,11 +1980,11 @@ body.is-mobile.is-loading > * {
   transition: 0.5s; }
   .overlay.is_active p {
     opacity: 1;
-    -moz-transform: translateX(25px);
-    -o-transform: translateX(25px);
-    -ms-transform: translateX(25px);
-    -webkit-transform: translateX(25px);
-    transform: translateX(25px); }
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
     .overlay.is_active p:nth-of-type(50) {
       -webkit-transition-delay: 5s;
       -moz-transition-delay: 5s;

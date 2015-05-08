@@ -54,3 +54,20 @@
     margin-bottom: 1em;
   }
 }
+
+@media #{$small-only}{
+  .overlay .overlay_header{
+    height: auto;
+    overflow: hidden;
+    
+    .overlay_close{
+      right: 0;
+      bottom: 0;
+      position: relative;
+      
+      width: 100%;
+      float: left;
+      margin-top: 25px;
+    }
+  }
+}
