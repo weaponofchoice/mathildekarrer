@@ -1156,7 +1156,7 @@ header {
   .overlay * {
     color: white; }
 
-.overlay p {
+.overlay * {
   font-size: 1.5rem; }
 
 .overlay_header {
