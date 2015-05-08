@@ -1,8 +1,70 @@
+// BOURBON MIXINS
+$prefix-for-webkit:    true;
+$prefix-for-mozilla:   true;
+$prefix-for-microsoft: true;
+$prefix-for-opera:     true;
+$prefix-for-spec:      true;
+
+@mixin prefixer($property, $value, $prefixes) {
+  @each $prefix in $prefixes {
+    @if $prefix == webkit {
+      @if $prefix-for-webkit {
+        -webkit-#{$property}: $value;
+      }
+    } @else if $prefix == moz {
+      @if $prefix-for-mozilla {
+        -moz-#{$property}: $value;
+      }
+    } @else if $prefix == ms {
+      @if $prefix-for-microsoft {
+        -ms-#{$property}: $value;
+      }
+    } @else if $prefix == o {
+      @if $prefix-for-opera {
+        -o-#{$property}: $value;
+      }
+    } @else if $prefix == spec {
+      @if $prefix-for-spec {
+        #{$property}: $value;
+      }
+    } @else  {
+      @warn "Unrecognized prefix: #{$prefix}";
+    }
+  }
+}
+
+@mixin transition-delay($times...) {
+  @include prefixer(transition-delay, $times, webkit moz spec);
+}
+
+@mixin stagger-transition-delay($i, $initial-delay, $stagger-delay) {
+  @while $i > 0 {
+    &:nth-of-type(#{$i}) {
+      @include transition-delay($initial-delay + $stagger-delay * $i)
+    }
+    $i: $i - 1;
+  }
+}
+
+// Applying the animations
+.overlay p{  
+  @include transition( .5s );
+  
+  opacity: 0;
+}
+
 .overlay.is_active{
   @include show( .5s );
+  
+  p{
+    opacity: 1;
+    @include transform(translateX(25px));
+    @include stagger-transition-delay(50, 0s, 0.1s);
+  }
 }
 
 body.overlay_active{
+  margin-right: 15px;
   overflow: hidden;
   
   main{
