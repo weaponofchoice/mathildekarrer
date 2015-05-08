@@ -1,3 +1,11 @@
 .overlay.is_active{
-  left: 0;
+  @include show( .5s );
+}
+
+body.overlay_active{
+  overflow: hidden;
+  
+  main{
+    overflow: auto;
+  }
 }
