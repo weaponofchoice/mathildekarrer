@@ -72,3 +72,30 @@
     margin-bottom: 2px;
   }
 }
+
+@media #{$small-only}{
+  .modal{
+    padding-left: 0;
+    padding-right: 0;
+    
+    .modal_header{
+      a{
+        color: transparent;
+      }
+    }
+    
+    .modal_content{
+      margin-top: 60px;
+      
+      ul li{
+        p:first-child{
+          display: none;
+        }
+        
+        p:last-child{
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
