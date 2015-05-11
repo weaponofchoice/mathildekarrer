@@ -1587,6 +1587,18 @@ body.is-mobile .section-hero .section-hero-banner {
     margin-right: 15px;
     margin-bottom: 2px; }
 
+@media only screen and (max-width: 31.25em) {
+  .modal {
+    padding-left: 0;
+    padding-right: 0; }
+    .modal .modal_header a {
+      color: transparent; }
+    .modal .modal_content {
+      margin-top: 60px; }
+      .modal .modal_content ul li p:first-child {
+        display: none; }
+      .modal .modal_content ul li p:last-child {
+        margin-left: 0; } }
 /*
  * Show and Hide class functions
  */
