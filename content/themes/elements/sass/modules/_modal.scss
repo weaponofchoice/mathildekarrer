@@ -88,11 +88,13 @@
       margin-top: 60px;
       
       ul li{
-        p:first-child{
+        > p:first-child,
+        > div:first-child{
           display: none;
         }
         
-        p:last-child{
+        > p:last-child,
+        > div:last-child{
           margin-left: 0;
         }
       }
