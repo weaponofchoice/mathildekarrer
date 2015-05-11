@@ -18,6 +18,13 @@ $ ->
   image.last().addClass "last-image last"
   bullet.last().addClass "last-bullet last"
   
+  # Hiding bullets if there's only 1 image
+  if image.length < 2
+    bullets.hide()
+    controls.hide()
+  else
+    # show them
+  
   # lightbox functionality
   open = $('.lightbox-open')
   close = $('.lightbox-close')
@@ -118,11 +125,3 @@ $ ->
     
     current.removeClass "is-active"
     target.addClass "is-active"
-  return
-    
-  # Hiding bullets if there's only 1 image
-  if image.length < 2
-    bullets.hide()
-    controls.hide()
-  else
-    # show them

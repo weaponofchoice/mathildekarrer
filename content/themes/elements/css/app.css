@@ -1299,6 +1299,9 @@ nav ul {
       -o-transition: 0.5s;
       transition: 0.5s; }
 
+@media only screen and (max-width: 31.25em) {
+  .case_slider {
+    width: calc(100% - 60px); } }
 .slider-bullets {
   position: absolute;
   bottom: 1em;

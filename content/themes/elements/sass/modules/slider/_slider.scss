@@ -60,3 +60,9 @@ $ratio: (1 / 2) * 100%; // 2:1
     }
   }
 }
+
+@media #{$small-only}{
+  .case_slider{
+    width: calc(100% - 60px);
+  }
+}
