@@ -1516,6 +1516,9 @@ body.is-mobile .section-hero .section-hero-banner {
   .section_grid ul.isotope_masonry li:nth-child(n) img {
     margin-bottom: 0; }
 
+@media only screen and (max-width: 31.25em) {
+  .section_grid ul li {
+    padding: 0; } }
 .modal {
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -1595,9 +1598,11 @@ body.is-mobile .section-hero .section-hero-banner {
       color: transparent; }
     .modal .modal_content {
       margin-top: 60px; }
-      .modal .modal_content ul li p:first-child {
+      .modal .modal_content ul li > p:first-child,
+      .modal .modal_content ul li > div:first-child {
         display: none; }
-      .modal .modal_content ul li p:last-child {
+      .modal .modal_content ul li > p:last-child,
+      .modal .modal_content ul li > div:last-child {
         margin-left: 0; } }
 /*
  * Show and Hide class functions

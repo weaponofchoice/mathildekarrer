@@ -60,3 +60,9 @@
     }
   }
 }
+
+@media #{$small-only}{
+  .section_grid ul li{
+    padding: 0;
+  }
+}
