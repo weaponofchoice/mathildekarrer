@@ -54,3 +54,9 @@ body.is-mobile{
     position: relative;
   }
 }
+
+@media #{$small-only}{
+  .section_hero{
+    display: none;
+  }
+}

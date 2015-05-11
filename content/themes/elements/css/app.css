@@ -1128,6 +1128,8 @@ header {
 
 @media only screen and (max-width: 31.25em) {
   header {
+    top: 0;
+    position: fixed;
     padding-left: 0;
     padding-right: 0; }
     header a:last-child {
@@ -1468,6 +1470,9 @@ main .section:last-child {
 body.is-mobile .section-hero .section-hero-banner {
   position: relative; }
 
+@media only screen and (max-width: 31.25em) {
+  .section_hero {
+    display: none; } }
 .section_text {
   text-align: center; }
   .section_text .section_content {

@@ -29,6 +29,9 @@ header {
 
 @media #{$small-only}{
   header{
+    top: 0;
+    position: fixed;
+    
     padding-left: 0;
     padding-right: 0;
     
