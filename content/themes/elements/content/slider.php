@@ -28,7 +28,13 @@ echo '<section class="section section_slider' . (( $slider_o_menu == true ) ? ' 
       // The images
       echo '<ul class="slider-images s-4 columns">';
         foreach( $slider_c_images as $image ):
-          echo '<li><img src="' . $image['sizes']['large'] . '" width="' . $image['width'] . '" height="' . $image['height'] . '"></li>';
+          
+          if( $detect->isMobile() ):
+            echo '<li><img src="' . $image['sizes']['m-large'] . '" width="' . $image['width'] . '" height="' . $image['height'] . '"></li>';
+          else :
+            echo '<li><img src="' . $image['sizes']['large'] . '" width="' . $image['width'] . '" height="' . $image['height'] . '"></li>';
+          endif;
+          
         endforeach;
       echo '</ul>';
       
