@@ -17,7 +17,7 @@ header {
   
   a:last-child{
     right: 60px;
-    bottom: 15px;
+    bottom: 20px;
     position: absolute;
   }
 }
@@ -25,4 +25,21 @@ header {
 .single header{
   top: 0;
   position: fixed;
+}
+
+@media #{$small-only}{
+  header{
+    padding-left: 0;
+    padding-right: 0;
+    
+    a:last-child{
+      right: 0;
+      bottom: 0;
+      position: relative;
+      
+      width: 100%;
+      float: left;
+      margin-top: 25px;
+    }
+  }
 }

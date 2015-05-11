@@ -1,9 +1,10 @@
 .overlay{
-  @include transition( .5s );
+  @include hide( .5s );
   
   top: 0;
-  left: 100%;
+  left: 0;
   position: fixed;
+  overflow-y: scroll;
   z-index: $zIndex-overlay;
   
   width: 100%;
@@ -16,11 +17,11 @@
   }
 }
 
+.overlay *{
+  font-size: rem-calc(24);
+}
+
 .overlay_header{
-  top: 0;
-  left: 0;
-  position: absolute;
-  
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -33,8 +34,7 @@
   
   a:last-child{
     right: 60px;
-    bottom: 15px;
-    position: absolute;
+    position: fixed;
     
     img{
       width: 15px;
@@ -46,17 +46,28 @@
 }
 
 .overlay_content{
-  @include transform( translateY(-50%) );
-  
-  top: 50%;
-  right: 0;
-  left: 0;
-  position: absolute;
-  
   max-width: 650px;
   margin: auto;
+  padding: 50px 25px;
   
   p{
     margin-bottom: 1em;
+  }
+}
+
+@media #{$small-only}{
+  .overlay .overlay_header{
+    height: auto;
+    overflow: hidden;
+    
+    .overlay_close{
+      right: 0;
+      bottom: 0;
+      position: relative;
+      
+      width: 100%;
+      float: left;
+      margin-top: 25px;
+    }
   }
 }
