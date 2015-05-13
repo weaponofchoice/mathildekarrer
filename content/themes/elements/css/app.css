@@ -1126,9 +1126,10 @@ header {
   top: 0;
   position: fixed; }
 
-@media only screen and (max-width: 31.25em) {
+@media only screen and (max-width: 62.5em) {
   header {
     top: 0;
+    bottom: auto;
     position: fixed;
     padding-left: 0;
     padding-right: 0; }
@@ -1184,7 +1185,7 @@ header {
   .overlay_content p {
     margin-bottom: 1em; }
 
-@media only screen and (max-width: 31.25em) {
+@media only screen and (max-width: 62.5em) {
   .overlay .overlay_header {
     height: auto;
     overflow: hidden; }
