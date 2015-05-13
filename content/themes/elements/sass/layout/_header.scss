@@ -27,9 +27,10 @@ header {
   position: fixed;
 }
 
-@media #{$small-only}{
+@media #{$medium-down}{
   header{
     top: 0;
+    bottom: auto;
     position: fixed;
     
     padding-left: 0;
