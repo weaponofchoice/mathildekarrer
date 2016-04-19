@@ -8,7 +8,7 @@ $case_desc = get_field( 'case_desc' );
 ?>
 
 <div class="case_slider">
-  <div class="case_slider-content row">
+  <div class="case_slider-content slider row">
     <ul class="slider-images s-4 columns">
       <?php foreach( $case_images as $image ): ?>
         <li>
@@ -25,8 +25,8 @@ $case_desc = get_field( 'case_desc' );
 
     <?php if(! $detect->isMobile() ): ?>
       <div class="slider-controls">
-        <a class="slider-prev arrow arrow-left" href="javascript:;"><img src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg"></a>
-        <a class="slider-next arrow arrow-right" href="javascript:;"><img src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg"></a>
+        <li class="slider-prev arrow arrow-left"><img src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg"></li>
+        <li class="slider-next arrow arrow-right"><img src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg"></li>
       </div>
     <?php endif; ?>
   </div>
