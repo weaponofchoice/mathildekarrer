@@ -77,11 +77,25 @@
   white-space: nowrap;
 
   img{
+    @include transition( .2s );
+    
     vertical-align: middle;
 
     max-width: 15px;
     margin-right: 15px;
     margin-bottom: 2px;
+  }
+
+  &.modal_open:hover{
+    img{
+      margin-top: -10px;
+    }
+  }
+
+  &.modal_close:hover{
+    img{
+      @include transform( rotate(90deg) );
+    }
   }
 }
 

@@ -1607,10 +1607,23 @@ body.is-mobile .section-hero .section-hero-banner {
   line-height: 50px;
   white-space: nowrap; }
   .modal_trigger img {
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
     vertical-align: middle;
     max-width: 15px;
     margin-right: 15px;
     margin-bottom: 2px; }
+  .modal_trigger.modal_open:hover img {
+    margin-top: -10px; }
+  .modal_trigger.modal_close:hover img {
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg); }
 
 @media screen and (max-width: 1180px) {
   .modal_trigger {
