@@ -1,62 +1,47 @@
 /* Arrows */
 .slider-controls{
-  width: 100%;
+  @include transform( translate(-50%, -50%) );
+
   top: 50%;
   left: 50%;
   position: absolute;
-  @include transform( translate(-50%, -50%) );
-  
+
+  width: 100%;
+
   .arrow{
-    height: 100%;
-    width: 18px;
+    @include transition( .2s );
+
+    top: -10px;
     position: absolute;
-    top: 0;
+
+    height: 38px;
+    width: 38px;
+    padding: 10px;
     display: block;
+
     cursor: pointer;
-    
-    i{
-      width: rem-calc(20);
-      height: rem-calc(20);
-      top: 50%;
-      left: 50%;
-      
-      position: absolute;
-      cursor: pointer;
-      
-      &:before{
-        width: rem-calc(3);
-        height: 100%;
-        position: absolute;
-        background: $black;
-        content: " ";
-      }
-      
-      &:after{
-        height: rem-calc(3);
-        width: 100%;
-        position: absolute;
-        background: $black;
-        content: " ";
-      }
-    }
-    
-    &.arrow-left{ 
+
+    &.arrow-left{
+      @include transform( rotate(-90deg) );
+
       left: 0;
+
       margin-left: 2em;
-      -webkit-transform: rotate(-90deg);
-      
-      i{ 
-        background-position: -64px -32px;
+
+      &:hover{
+        margin-left: 1.5em;
       }
     }
-    
-    &.arrow-right{ 
+
+    &.arrow-right{
+      @include transform( rotate(90deg) );
+
       right: 0;
+
       margin-right: 2em;
-      -webkit-transform: rotate(90deg);
-      
-      i{
-        background-position: -64px -64px;
+
+      &:hover{
+        margin-right: 1.5em;
       }
     }
   }
@@ -67,7 +52,7 @@
   .slider-controls{
     @include hide( .3s );
   }
-  
+
   &:hover .slider-controls{
     @include show( .3s );
   }
