@@ -1,27 +1,36 @@
 .modal{
-  @include transition( .3s );
-  
+  @include transition( .2s );
+  @include transform( translateY(100%) );
+
+  bottom: 50px;
   position: absolute;
-  
-  background: $white;
-  
-  .modal_header{
-    position: absolute;
-    
-    width: 100%;
-    margin: 15px 0;
+
+  width: 100%;
+  max-width: none;
+
+  background-color: $white;
+
+  &.is_active{
+    @include transform( translateY(0) );
+
+    .modal_content{
+      @include show( .2s );
+    }
   }
-  
+
+  .modal_header{
+    height: 50px;
+    max-width: 1180px;
+    margin: 0 auto;
+
+    z-index: 9999;
+  }
+
   .modal_content{
-    @include hide( .3s );
-    
-    top: 0;
-    right: 0;
-    left: 0;
-    
-    width: 100%;
-    max-width: 900px;
-    margin: 30px auto;
+    @include hide( .2s );
+
+    margin-left: 150px;
+    margin-top: -40px;
   }
 }
 
@@ -30,27 +39,27 @@
   @include flex;
   @include flex-direction( row );
   @include align-items( baseline );
-  
+
   height: auto;
   overflow: hidden;
   margin-bottom: 1em;
-  
+
   > p,
   > div{
     display: inline-block;
-    
+
     &:first-child{
       width: 20%;
-      
+
       text-align: right;
     }
-    
+
     &:last-child{
       width: calc(80% - 50px);
       margin-left: 50px;
     }
   }
-  
+
   &:last-child{
     margin-bottom: 30px;
   }
@@ -61,43 +70,42 @@
   top: 0;
   left: 0;
   position: absolute;
-  
-  width: 100%;
-  
+
+  width: auto;
+
+  line-height: 50px;
+  white-space: nowrap;
+
   img{
     vertical-align: middle;
-    
+
     max-width: 15px;
     margin-right: 15px;
     margin-bottom: 2px;
   }
 }
 
-@media #{$small-only}{
+@media screen and (max-width: 1180px){
+  .modal_trigger{
+    left: 30px;
+  }
+}
+
+@media screen and (max-width: 600px){
   .modal{
-    padding-left: 0;
-    padding-right: 0;
-    
-    .modal_header{
-      a{
-        color: transparent;
-      }
-    }
-    
+    left: 0;
+
+    width: 100% !important;
+    margin: 0;
+    margin-left: 0 !important;
+
     .modal_content{
-      margin-top: 60px;
-      
-      ul li{
-        > p:first-child,
-        > div:first-child{
-          display: none;
-        }
-        
-        > p:last-child,
-        > div:last-child{
-          margin-left: 0;
-        }
-      }
+      margin: 0;
+      margin-left: 0;
     }
+  }
+
+  .modal_trigger{
+    left: 0;
   }
 }

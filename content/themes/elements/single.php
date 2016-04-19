@@ -22,7 +22,7 @@ $case_desc = get_field( 'case_desc' );
         </li>
       <?php endforeach; ?>
     </ul>
-    
+
     <?php if(! $detect->isMobile() ): ?>
       <div class="slider-controls">
         <a class="slider-prev arrow arrow-left" href="javascript:;"><img src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg"></a>
@@ -32,13 +32,13 @@ $case_desc = get_field( 'case_desc' );
   </div>
 </div>
 
-<div class="case_info modal s-4 columns">
+<div class="case_info modal s-4 columns is_fullwidth">
   <div class="case_info-header modal_header">
     <a class="modal_trigger modal_open"><span class="system is_uppercase"><img src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg">more info : </span><?php echo $case_title; ?></a>
-    
+
     <a class="modal_trigger modal_close"><span class="system is_uppercase"><img src="<?php echo get_template_directory_uri(); ?>/img/close.svg">close window</span></a>
   </div>
-  
+
   <div class="case_info-content modal_content">
     <ul>
       <li>
