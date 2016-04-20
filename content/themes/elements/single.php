@@ -32,7 +32,7 @@ $case_desc = get_field( 'case_desc' );
   </div>
 </div>
 
-<div class="case_info modal s-4 columns is_fullwidth">
+<div class="case_info modal s-4 columns">
   <div class="case_info-header modal_header">
     <a class="modal_trigger modal_open"><span class="system is_uppercase"><img src="<?php echo get_template_directory_uri(); ?>/img/arrow.svg">more info : </span><?php echo $case_title; ?></a>
 

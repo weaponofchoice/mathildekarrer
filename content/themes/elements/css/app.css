@@ -1563,6 +1563,7 @@ body.is-mobile .section-hero .section-hero-banner {
     -ms-transition: 0.2s;
     -o-transition: 0.2s;
     transition: 0.2s;
+    width: calc(100% - 200px);
     margin-left: 150px;
     margin-top: -40px; }
 
@@ -1635,6 +1636,7 @@ body.is-mobile .section-hero .section-hero-banner {
     margin: 0;
     margin-left: 0 !important; }
     .modal .modal_content {
+      width: 100%;
       margin: 0;
       margin-left: 0; }
 

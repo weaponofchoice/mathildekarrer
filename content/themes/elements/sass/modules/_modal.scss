@@ -29,6 +29,7 @@
   .modal_content{
     @include hide( .2s );
 
+    width: calc(100% - 200px);
     margin-left: 150px;
     margin-top: -40px;
   }
@@ -78,7 +79,7 @@
 
   img{
     @include transition( .2s );
-    
+
     vertical-align: middle;
 
     max-width: 15px;
@@ -114,6 +115,7 @@
     margin-left: 0 !important;
 
     .modal_content{
+      width: 100%;
       margin: 0;
       margin-left: 0;
     }
