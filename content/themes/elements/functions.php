@@ -7,7 +7,6 @@
 require_once('includes/scripts.php');
 require_once('includes/image-sizes.php');
 
-require_once('includes/admin/renaming.php');
 require_once('includes/admin/acf-page.php');
 
 // Initialize mobile detect
