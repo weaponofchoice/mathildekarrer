@@ -1917,6 +1917,15 @@ p.is_small {
     min-width: 100%;
     width: auto; }
 
+@keyframes pulsate {
+  0% {
+    opacity: .8;
+    width: 5px;
+    height: 5px; }
+  100% {
+    opacity: 0;
+    width: 30px;
+    height: 30px; } }
 body > * {
   opacity: 1;
   visibility: visible;
@@ -1927,10 +1936,7 @@ body > * {
   transition: 0.5s; }
 
 body.is-loading {
-  height: auto !important;
-  background: url("../img/logo.svg") center center no-repeat;
-  background-size: 200px;
-  background-attachment: fixed; }
+  height: auto !important; }
   body.is-loading > * {
     opacity: 0;
     visibility: hidden;
@@ -1939,6 +1945,20 @@ body.is-loading {
     -ms-transition: 0s;
     -o-transition: 0s;
     transition: 0s; }
+  body.is-loading:after {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    margin: auto;
+    border-radius: 30px;
+    border: 3px solid black;
+    -webkit-transform-origin: 50% 50%;
+    animation-name: pulsate;
+    animation-duration: .8s;
+    animation-iteration-count: infinite; }
 
 body.is-mobile.is-loading > * {
   opacity: 1;
