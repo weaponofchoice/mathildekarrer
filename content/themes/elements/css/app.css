@@ -1919,13 +1919,15 @@ p.is_small {
 
 @keyframes pulsate {
   0% {
-    opacity: .8;
+    opacity: .6;
     width: 5px;
-    height: 5px; }
+    height: 5px;
+    border-width: 2px; }
   100% {
     opacity: 0;
     width: 30px;
-    height: 30px; } }
+    height: 30px;
+    border-width: 5px; } }
 body > * {
   opacity: 1;
   visibility: visible;
@@ -1954,10 +1956,11 @@ body.is-loading {
     position: fixed;
     margin: auto;
     border-radius: 30px;
+    -webkit-border-radius: 30px;
     border: 3px solid black;
     -webkit-transform-origin: 50% 50%;
     animation-name: pulsate;
-    animation-duration: .8s;
+    animation-duration: 1s;
     animation-iteration-count: infinite; }
 
 body.is-mobile.is-loading > * {
