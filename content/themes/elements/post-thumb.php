@@ -11,11 +11,17 @@ $case_link = get_permalink();
   <a href="<?php echo $case_link; ?>">
 
     <?php if( $detect->isMobile() ): ?>
-      <img src="<?php echo $case_thumb['sizes']['m-medium']; ?>" width="<?php echo $case_thumb['width']; ?>" height="<?php echo $case_thumb['height']; ?>">
+      <figure>
+        <img src="<?php echo $case_thumb['sizes']['m-medium']; ?>" width="<?php echo $case_thumb['width']; ?>" height="<?php echo $case_thumb['height']; ?>">
+      </figure>
     <?php elseif( $case_thumb_ext == 'gif' ): ?>
-      <img src="<?php echo $case_thumb['url']; ?>" width="<?php echo $case_thumb['width']; ?>" height="<?php echo $case_thumb['height']; ?>">
+      <figure>
+        <img src="<?php echo $case_thumb['url']; ?>" width="<?php echo $case_thumb['width']; ?>" height="<?php echo $case_thumb['height']; ?>">
+      </figure>
     <?php else: ?>
-      <img src="<?php echo $case_thumb['sizes']['medium']; ?>" width="<?php echo $case_thumb['width']; ?>" height="<?php echo $case_thumb['height']; ?>">
+      <figure>
+        <img src="<?php echo $case_thumb['sizes']['medium']; ?>" width="<?php echo $case_thumb['width']; ?>" height="<?php echo $case_thumb['height']; ?>">
+      </figure>
     <?php endif; ?>
 
     <p><span class="system"><?php echo $case_year; ?>: </span><?php echo $case_title; ?></p>

@@ -8,18 +8,22 @@
 .section_grid ul li{
   float: none;
   display: inline-block;
-  
+
   margin-bottom: 50px;
-  
+
   a{
     vertical-align: baseline;
-    
-    img{
-      display: block;
-      
-      min-width: 100%;
+
+    figure{
+      background-color: $grey-light;
+
+      img{
+        display: block;
+
+        min-width: 100%;
+      }
     }
-    
+
     p{
       padding: 1em 0;
     }
@@ -54,7 +58,7 @@
 .section_grid ul.isotope_masonry{
   li:nth-child(n){
     margin-bottom: $column-gutter;
-    
+
     img{
       margin-bottom: 0;
     }

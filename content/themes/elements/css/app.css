@@ -1461,9 +1461,11 @@ body.is-mobile .section-hero .section-hero-banner {
   margin-bottom: 50px; }
   .section_grid ul li a {
     vertical-align: baseline; }
-    .section_grid ul li a img {
-      display: block;
-      min-width: 100%; }
+    .section_grid ul li a figure {
+      background-color: #f3f4f5; }
+      .section_grid ul li a figure img {
+        display: block;
+        min-width: 100%; }
     .section_grid ul li a p {
       padding: 1em 0; }
 
