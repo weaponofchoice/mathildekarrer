@@ -1,0 +1,43 @@
+jQuery(document).ready( function($) {
+
+  var infiniteScrollPosts = function() {
+    var grid = $('.section_grid');
+
+    var trigger_point = $(document).height();
+    var screen_bottom = $(window).scrollTop() + $(window).height();
+
+    $(document).on('scroll', function() {
+      trigger_point = $(document).height();
+      screen_bottom = $(window).scrollTop() + $(window).height();
+
+      if( screen_bottom >= trigger_point ){
+        $(document).off('scroll');
+
+        loadPosts();
+      }
+    });
+  };
+
+  if( $('.section_grid').length > 0 ){
+    infiniteScrollPosts();
+  }
+
+  var loadPosts = function() {
+    // Count already loaded products
+    var post_count = $('.section_grid li').length;
+
+    // The ajax call
+    jQuery.ajax({
+      url : moreposts.ajax_url,
+      type : 'post',
+      data : {
+        action : 'more_posts',
+        offset: post_count
+      },
+      success : function( response ) {
+        jQuery('.section_grid ul').append(response);
+      }
+    });
+  };
+
+})
