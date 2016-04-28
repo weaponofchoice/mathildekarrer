@@ -1190,7 +1190,7 @@ header {
       transform: rotate(90deg); }
 
 .overlay_content {
-  max-width: 650px;
+  max-width: 800px;
   margin: auto;
   padding: 50px 25px; }
   .overlay_content p {
