@@ -20,6 +20,9 @@ jQuery(document).ready( function($) {
   }
 
   var loadPosts = function() {
+    // Add spinner below the grid
+    $('.section_grid ul').after('<div class="loader"></div>');
+
     // Count already loaded products
     var post_count = $('.section_grid li').length;
 
@@ -34,8 +37,12 @@ jQuery(document).ready( function($) {
       success : function( response ) {
         jQuery('.section_grid ul').append(response);
 
+        // If the response is not empty, recalculate waypoints
         if( response ){
+          $('.loader').remove();
           infiniteScrollPosts();
+        } else {
+          $('.loader').remove();
         }
       }
     });
