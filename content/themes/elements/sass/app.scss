@@ -7,12 +7,13 @@
 @import
   "base/_reset",
   "base/_mixins",
+  "base/_flexbox",
   "base/_functions",
   "base/_colors",
-  
+
   "base/typo/_fonts",
   "base/typo/_typography";
-  
+
 // LAYOUT
 @import
   "layout/_z-index",
@@ -21,23 +22,23 @@
   "layout/_main",
   "layout/_header",
   "layout/_overlay",
-  
+
   "layout/navigation/_menu",
   "layout/navigation/_nav";
-  
+
 // MODULE
 @import
   "modules/slider/_slider",
   "modules/slider/_slider-bullets",
   "modules/slider/_slider-controls",
-  
+
   "modules/elements/_section",
   "modules/elements/_hero",
   "modules/elements/_text",
   "modules/elements/_grid",
-  
+
   "modules/_modal";
-  
+
 // STATE
 @import
   "states/_global",

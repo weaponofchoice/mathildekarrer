@@ -6,8 +6,8 @@
 // Includes
 require_once('includes/scripts.php');
 require_once('includes/image-sizes.php');
-
 require_once('includes/admin/acf-page.php');
+require_once('includes/more-posts.php');
 
 // Initialize mobile detect
 require_once('includes/Mobile_Detect.php');
