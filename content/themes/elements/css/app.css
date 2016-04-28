@@ -1561,11 +1561,13 @@ body.is-mobile .section-hero .section-hero-banner {
     .modal_content ul li > p:first-child,
     .modal_content ul li > div:first-child {
       width: 20%;
+      vertical-align: top;
+      margin-top: 5px;
       text-align: right; }
     .modal_content ul li > p:last-child,
     .modal_content ul li > div:last-child {
       width: calc(80% - 50px);
-      margin-left: 50px; }
+      padding-left: 50px; }
   .modal_content ul li:last-child {
     margin-bottom: 30px; }
 
