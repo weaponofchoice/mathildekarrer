@@ -7,7 +7,7 @@ if( $query->have_posts() ):
 
   echo '<section class="section section_grid section_gridSec">';
     echo '<div class="section_content">';
-      echo '<ul class="s-grid-1 m-grid-2 l-grid-2">';
+      echo '<ul>';
 
       while( $query->have_posts() ): $query->the_post();
         include( 'post-thumb.php' );

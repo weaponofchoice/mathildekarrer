@@ -1,17 +1,22 @@
 .section_grid{
   ul{
+    @include flexbox;
+    @include flex-wrap(wrap);
+    @include align-items(baseline);
+
     width: 100%;
   }
 }
 
 // Grid item
 .section_grid ul li{
-  float: none;
-  display: inline-block;
+  width: 50%;
+  padding: 0 30px;
 
   margin-bottom: 50px;
 
   a{
+    display: block;
     vertical-align: baseline;
 
     figure{
@@ -30,43 +35,21 @@
   }
 }
 
-// Removing margin-bottom for last row
-@media #{$large-up}{
-  @for $value from $block-grid-elements through 1{
-    .l-grid-#{$value} li:nth-last-child(-n + #{$value}){
-      margin-bottom: 0;
-    }
-  }
-}
-
-@media #{$medium-only}{
-  @for $value from $block-grid-elements through 1{
-    .m-grid-#{$value} li:nth-last-child(-n + #{$value}){
-      margin-bottom: 0;
-    }
-  }
-}
-
-@media #{$small-only}{
-  @for $value from $block-grid-elements through 1{
-    .s-grid-#{$value} li:nth-last-child(-n + #{$value}){
-      margin-bottom: 0;
-    }
-  }
-}
-
-.section_grid ul.isotope_masonry{
-  li:nth-child(n){
-    margin-bottom: $column-gutter;
-
-    img{
-      margin-bottom: 0;
-    }
-  }
-}
-
-@media #{$small-only}{
+@media #{$medium-down}{
   .section_grid ul li{
+    &:nth-child(odd){
+      padding: 0 15px 0 0;
+    }
+
+    &:nth-child(even){
+      padding: 0 0 0 15px;
+    }
+  }
+}
+
+@media #{$small-only}{
+  .section_grid ul li:nth-child(n){
+    width: 100%;
     padding: 0;
   }
 }
