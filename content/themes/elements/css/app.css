@@ -1634,7 +1634,7 @@ body.is-mobile .section-hero .section-hero-banner {
   animation-iteration-count: infinite; }
 
 .section_grid .loader {
-  margin: auto; }
+  margin: 30px auto; }
 
 /*
  * Show and Hide class functions

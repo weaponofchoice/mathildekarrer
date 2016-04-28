@@ -37,7 +37,6 @@ jQuery(document).ready( function($) {
       success : function( response ) {
         jQuery('.section_grid ul').append(response);
 
-        // If the response is not empty, recalculate waypoints
         if( response ){
           $('.loader').remove();
           infiniteScrollPosts();
