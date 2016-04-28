@@ -51,13 +51,15 @@
 
     &:first-child{
       width: 20%;
+      vertical-align: top;
+      margin-top: 5px;
 
       text-align: right;
     }
 
     &:last-child{
       width: calc(80% - 50px);
-      margin-left: 50px;
+      padding-left: 50px;
     }
   }
 
