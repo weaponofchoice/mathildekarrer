@@ -9,7 +9,7 @@ function more_posts(){
 
   // The Query
   $query = array(
-    'posts_per_page'  => 1000,
+    'posts_per_page'  => 10,
     'offset'          => $offset
   );
   $wp_query = new WP_Query( $query );

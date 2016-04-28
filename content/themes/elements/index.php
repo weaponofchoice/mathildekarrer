@@ -1,7 +1,7 @@
 <?php
 get_header();
 
-$query = new WP_Query( array('posts_per_page' => 2) );
+$query = new WP_Query( array('posts_per_page' => 10) );
 
 if( $query->have_posts() ):
 

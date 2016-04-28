@@ -3,14 +3,11 @@ jQuery(document).ready( function($) {
   var infiniteScrollPosts = function() {
     var grid = $('.section_grid');
 
-    var trigger_point = $(document).height();
-    var screen_bottom = $(window).scrollTop() + $(window).height();
-
     $(document).on('scroll', function() {
-      trigger_point = $(document).height();
+      trigger_point = $(document).height() - 300;
       screen_bottom = $(window).scrollTop() + $(window).height();
 
-      if( screen_bottom >= trigger_point ){
+      if( screen_bottom > trigger_point ){
         $(document).off('scroll');
 
         loadPosts();
@@ -36,6 +33,10 @@ jQuery(document).ready( function($) {
       },
       success : function( response ) {
         jQuery('.section_grid ul').append(response);
+
+        if( response ){
+          infiniteScrollPosts();
+        }
       }
     });
   };
